@@ -41,7 +41,6 @@ io.on('connection', (socket) => {
         
         
 
-        // NOT COMPLETELY SURE IF THIS ONLY SENDS TO PERSON WHO JUST JOINED
         io.to(player.room).emit('roomUsers', {
             room: player.room,
             users: game.getRoomPlayers(player.room)
