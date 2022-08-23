@@ -6,7 +6,6 @@ class Game {
         this.sockets = {}
         this.lastUpdateTime = Date.now()
         this.shouldSendUpdate = false 
-        // CHANGE THIS TO SET ANIM FRAME LATER
         setInterval(this.update.bind(this), 1000 / 60, 60)
     }
 
@@ -92,8 +91,8 @@ class Game {
 
                 // Note: this would NOT work where knowing the location
                 // of every player provides an advantage. This sends data
-                // about visible players but doesn't take into account things
-                // like walls and hidden locations (like bushes perhaps).
+                // about visible players but doesn't take into account 
+                // walls and hidden locations 
                 // Currently, it is not doing any checks but simply returns
                 // the positions of all other players
                 
